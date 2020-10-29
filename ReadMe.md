@@ -1,8 +1,7 @@
 
-***Installing WSL2, ROS, and Mushr***
+**Installing WSL2, ROS, and Mushr**
 
-
-**Setup and Install WSL2**
+***Setup and Install WSL2***
 
 1. Steps for Installing/Enabling Windows Subsystem for Linux 2 (WSL2): (https://docs.microsoft.com/en-us/windows/wsl/install-win10)
    
@@ -12,17 +11,17 @@
    
    2. Type 'winver', without single quotes, into the 'Open:' textbox:
 
-      <img src="./Images/Run_Winver_Command.png" height=230>
+      <img src="./Images/Run_Winver_Command.PNG" height=230>
    
    3. Verify that your Windows Version meets the below requirements:
 
-      <img src="./Images/Winver.png" height=400>
+      <img src="./Images/Winver.PNG" height=400>
    
       1. Version 1903 or higher, with Build 18362 or higher is required for WSL2
    
    4. Open PowerShell as Admin 
 
-      <img src="./Images/PowerShell_Command.png" height=500>
+      <img src="./Images/PowerShell_Command.PNG" height=500>
 
       1. Install WSL in Windows:
 
@@ -46,24 +45,23 @@
 
          1. Download and install the following .msi for AMD64 systems: (https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
 
-**Setup and Install Ubuntu 18.04 LTS**
+***Setup and Install Ubuntu 18.04 LTS***
 
 1. Open Edge and search the Micoroft Store for Ubuntu 18.04 LTS: (https://www.microsoft.com/en-us/p/ubuntu-1804-lts/9n9tngvndl3q?cid=msft_web_chart)
    
    1. Select 'Get' and then 'Open' to open the Microsoft Store
 
-      <img src="./Images/Edge_Microsoft_Store_Install_Ubuntu_18-04.png" height=500>
+      <img src="./Images/Edge_Microsoft_Store_Install_Ubuntu_18-04.PNG" height=500>
 
    2. The Microsoft Store should pull up Ubuntu 18.04 LTS.  Select 'Install':
 
-      <img src="./Images/Microsoft_Store_Install_Ubuntu_18-04.png" height=500>
+      <img src="./Images/Microsoft_Store_Install_Ubuntu_18-04.PNG" height=500>
    
    3. Open Ubuntu 18.04 LTS from the Start Menu in Windows to setup the Ubuntu username and password:
 
       <img src="./Images/Setup_Ubuntu_User-Password.png" height=500>
 
-
-**Setup and Install VcXsrV**
+***Setup and Install VcXsrV***
    
    1. Open Edge (or any browser) and download and install VcXsrv: (https://sourceforge.net/projects/vcxsrv/)
    
@@ -99,7 +97,7 @@
          
          3. Open the Start Menu app list and 'Pin to Start' the VcXsrv icon that should be visible now
          
-**Test VcXsrv With Ubuntu 18.04 LTS**
+***Test VcXsrv With Ubuntu 18.04 LTS***
 
    1. Run VcXsrv by double-clicking the shortcut, or configuration file, created in the previous steps.  If the optional steps were taken to place the shortcut in the Start Menu, click on the icon in the Start Menu.  A VcXsrv icon should appear in the notification area of the Taskbar.
    
@@ -135,7 +133,7 @@
 
    10. (http://wiki.ros.org/melodic/Installation/Ubuntu)
 
-**Setup and Install ROS Melodic on Ubuntu 18.04 LTS**
+***Setup and Install ROS Melodic on Ubuntu 18.04 LTS***
 
    1. This follows the guide from ROS exactly, but will be copied here for completeness (http://wiki.ros.org/melodic/Installation/Ubuntu)
 
