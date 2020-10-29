@@ -8,7 +8,7 @@
    
    1. Right-click on the Start button in the taskbar and select 'Run':
 
-      <img src="./Images/Run_Command.png" height=500 align=top>
+      <img src="./Images/Run_Command.PNG" height=500>
    
    2. Type 'winver', without single quotes, into the 'Open:' textbox:
 
@@ -30,19 +30,19 @@
 
                   dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
    
-      1. Install Virtual Machine Plaform in Windows:
+      2. Install Virtual Machine Plaform in Windows:
 
          1. Type in and run the following in the PowerShell administrator console widow: 
          
                   dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
    
-      2. Set WSL2 as the default WSL:
+      3. Set WSL2 as the default WSL:
 
          1. Type in and run the following in the PowerShell administrator console widow: 
 
                   wsl --set-default-version 2
 
-      3. Update the WSL2 Linux kernel: (https://docs.microsoft.com/en-us/windows/wsl/wsl2-kernel)
+      4. Update the WSL2 Linux kernel: (https://docs.microsoft.com/en-us/windows/wsl/wsl2-kernel)
 
          1. Download and install the following .msi for AMD64 systems: (https://wslstorestorage.blob.core.windows.net/wslblob/wsl_update_x64.msi)
 
