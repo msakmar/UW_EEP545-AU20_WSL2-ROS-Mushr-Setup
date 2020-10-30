@@ -27,19 +27,19 @@
 
          1. Type in and run the following in the PowerShell administrator console widow: 
 
-           dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
+                dism.exe /online /enable-feature /featurename:Microsoft-Windows-Subsystem-Linux /all /norestart
    
       2. Install Virtual Machine Plaform in Windows:
 
          1. Type in and run the following in the PowerShell administrator console widow: 
          
-           dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
+                dism.exe /online /enable-feature /featurename:VirtualMachinePlatform /all /norestart
    
       3. Set WSL2 as the default WSL:
 
          1. Type in and run the following in the PowerShell administrator console widow: 
 
-           wsl --set-default-version 2
+                wsl --set-default-version 2
 
       4. Update the WSL2 Linux kernel: (https://docs.microsoft.com/en-us/windows/wsl/wsl2-kernel)
 
