@@ -107,27 +107,23 @@
 
            echo "export DISPLAY=:0" >> ~/.bashrc
 
-   2. Type in and run the following in the Ubuntu console window: 
-
-        export LIBGL_ALWAYS_INDIRECT=0 >> ~/.bashrc
-
-   3. SourceType in and run the following in the Ubuntu console window: 
+   2. SourceType in and run the following in the Ubuntu console window: 
 
            source ~/.bashrc
    
-   4. Ensure Debian package index is up-to-date.  Type in and run the following in the Ubuntu console window:
+   3. Ensure Debian package index is up-to-date.  Type in and run the following in the Ubuntu console window:
 
            sudo apt update
 
-   5. Ensure Debian packages are up-to-date.  Accept to update all packages, if prompted to.  Type in and run the following in the Ubuntu console window:
+   4. Ensure Debian packages are up-to-date.  Accept to update all packages, if prompted to.  Type in and run the following in the Ubuntu console window:
 
            sudo apt upgrade
 
-   6. Test out if VcXsrv and Ubuntu are properly configured.  Type in and run the following in the Ubuntu console window: 
+   5. Test out if VcXsrv and Ubuntu are properly configured.  Type in and run the following in the Ubuntu console window: 
 
            xmessage -center "hello"
 
-   7. A VcXsrv window should open, meaning VcXsrv and Ubuntu are setup correctly.
+   6. A VcXsrv window should open, meaning VcXsrv and Ubuntu are setup correctly.
          
       <img src="./Images/VcXsrv_Verify_Ubuntu.PNG" height=400>
 
@@ -154,26 +150,26 @@
            sudo apt install ros-melodic-desktop-full
 
    5. Environment Setup.  Type in and run the following in the Ubuntu console window:
-   6. 
+
            echo "source /opt/ros/melodic/setup.bash" >> ~/.bashrc
    
-   7. Source the bash config file.  Type in and run the following in the Ubuntu console window:
+   6. Source the bash config file.  Type in and run the following in the Ubuntu console window:
             
            source ~/.bashrc
 
-   8. Install tools required for building ROS packages.  
+   7. Install tools required for building ROS packages.  
 
            sudo apt install python-rosdep python-rosinstall python-rosinstall-generator python-wstool build-essential
       
-   9. Install rosdep to use ros tools.  Type in and run the following in the Ubuntu console window:
+   8. Install rosdep to use ros tools.  Type in and run the following in the Ubuntu console window:
 
            sudo apt install python-rosdep
 
-   10. Initialize rosdep.  Type in and run the following in the Ubuntu console window:
+   9.  Initialize rosdep.  Type in and run the following in the Ubuntu console window:
 
            sudo rosdep init
 
-   11. Update rosdep.  Type in and run the following in the Ubuntu console window:
+   10. Update rosdep.  Type in and run the following in the Ubuntu console window:
 
            rosdep update
 
@@ -225,7 +221,7 @@
 
            vcs import < repos.yaml
 
-   12. Move realsense description folder.
+   12. Move the realsense description folder.
 
            mv ~/catkin_ws/src/mushr/mushr_hardware/realsense/realsense2_description ~/catkin_ws/src/mushr/mushr_hardware/realsense2_description
 
@@ -265,20 +261,23 @@
 
            rviz
 
+   22. *(Optional)*  Come back to this step if rviz crashes.  Remove a related to the Mesa 3D client-side OpenGL implementation (libGL). Type in and run the following in the Ubuntu console window: 
+
+           export LIBGL_ALWAYS_INDIRECT= >> ~/.bashrc
+
 ***(Optional) Setup and Install Visual Studio Code for WSL2 Ubuntu 18.04 LTS***
 
 1. Download and install Visual Studio Code (VS Code): (https://code.visualstudio.com/)
 
    1. (Optional) Install git (https://git-scm.com/downloads)
 
-   2. Use default options, but choose VS Code as the default code editor.
+      1. Use default options, but choose VS Code as the default code editor.
 
 2. Open VS Code.  
 
    1. Press '*Ctrl + Shift + X*' to open the extensions tab.
 
    2. Install the Remote-WSL extension (ms-vscode-remote.remote-wsl)
-
 
       1. VS Code should automatically detect the Ubuntu 18.04 LTS remote environment and set it up for you.  Accept the default settings.
 
